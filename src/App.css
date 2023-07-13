@@ -1,38 +1,567 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  list-style-type: none !important;
+  text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.z_1 {
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.w-390px {
+  width: 390px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.w-700px {
+  max-width: 700px;
+}
+
+.axon {
+  max-width: 130px;
+  filter: grayscale(1);
+}
+
+.axon:hover {
+  filter: grayscale(0);
+}
+
+.w-21px {
+  width: 21px;
+}
+
+.expedia {
+  max-width: 241px;
+  filter: grayscale(1);
+}
+
+.expedia:hover {
+  filter: grayscale(0);
+}
+
+.gradient-absolute {
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+}
+
+.w-96px {
+  max-width: 96px;
+}
+
+.alitalia {
+  max-width: 94px;
+  filter: grayscale(1);
+}
+
+.alitalia:hover {
+  filter: grayscale(0);
+}
+
+.jetstar {
+  max-width: 172px;
+  filter: grayscale(1);
+}
+
+.jetstar:hover {
+  filter: grayscale(0);
+}
+
+.btn_1 {
+  background-color: transparent;
+  border: 1px solid #212832;
+  padding: 9px 21px 9px 22px;
+  border-radius: 5px;
+  transition: all 250ms linear;
+}
+
+.btn-2 {
+  background-color: #F1A501;
+  border: 1px solid #F1A501;
   color: white;
+  max-width: 170px;
+  padding: 15px 26px 15px 26px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 250ms linear;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border: 1px solid #ffffff !important;
+  background-color: #ffffff;
+  border-radius: 36px !important;
+  cursor: pointer;
+  max-width: 267px;
+  min-height: 314px;
+  transition: all 300ms linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card:hover {
+  border: 1px solid #ffffff !important;
+  box-shadow: 0px 10px 15px -5px rgba(174, 174, 176, 0.51);
+}
+
+.destination_card {
+  background-color: #ffffff;
+  max-width: 315px;
+  border-radius: 25px !important;
+  box-shadow: 0px 10px 25px -10px #d1d0d0;
+  cursor: pointer;
+  transition: all 300ms linear !important;
+}
+
+.destination_card:hover {
+  box-shadow: -1px 5px 25px 0px #696868;
+}
+
+.rome_card {
+  background: #ffffff;
+  border: 1px solid white;
+  max-width: 263px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 20px 0px rgba(174, 174, 176, 0.51);
+}
+
+.w_50 {
+  width: 50px;
+  height: 50px;
+}
+
+.w-156px {
+  max-width: 156px;
+}
+
+.rome_card_absolute {
+  position: absolute;
+  right: -20%;
+  bottom: 15%;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+
+.circle-absolute {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  opacity: 10%;
+}
+
+.semicircle_absolute {
+  position: absolute;
+  top: 32%;
+  right: -20%;
+  z-index: -1;
+}
+
+.circle_2_absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 10%;
+}
+
+.send-absolute {
+  position: absolute;
+  top: 7%;
+  right: 1px;
+  z-index: 1;
+  transition: all 300ms linear !important;
+}
+
+.send-absolute:hover {
+  scale: 0.9;
+}
+
+.plus_img_2_absolute {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.w_70px {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.box {
+  background: #ffffff;
+  max-width: 370px;
+  border-radius: 26px;
+  border: 1px solid white;
+  cursor: pointer;
+  box-shadow: 1px 6px 10px 0px rgba(174, 174, 176, 0.51);
+}
+
+.box:hover {
+  background: #ffffff;
+  max-width: 370px;
+  border-radius: 26px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.box:hover .rome_card_absolute {
+  opacity: 1;
+}
+
+.box-2 {
+  background-color: #f9f2fa;
+  max-width: 1170px;
+  border: 1px sollid #c2bcd4;
+  border-radius: 129px 20px 20px 20px;
+}
+
+.email {
+  background-color: #ffffff;
+  padding-left: 20px;
+  width: 100%;
+  border-radius: 12px;
+  max-width: 421px;
+  height: 68px;
+  border: none;
+}
+
+.email-2 {
+  width: 95%;
+  height: 47px;
+  border: none;
+}
+
+.subscribe {
+  background-color: #ff896b;
+  padding: 22px 50px;
+  border-radius: 12px;
+  border: none;
+}
+
+.bg-light {
+  background-color: #DFD7F9;
+}
+
+.max-w-880px {
+  max-width: 880px;
+}
+
+.w_50 {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.max-207 {
+  max-width: 207px;
+}
+
+.w-107px {
+  width: 107px;
+  cursor: pointer;
+}
+
+.qantas {
+  max-width: 162px;
+  filter: grayscale(1);
+}
+
+.qantas:hover {
+  filter: grayscale(0);
+}
+
+.timeline {
+  content: '';
+  height: 80px;
+  width: 80px;
+  border: 1px solid #df6951;
+  border-radius: 30px 0px 10px 0px;
+  background: #DF6951;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: -1;
+  transition: all 300ms linear;
+}
+
+.col_3 .card:hover .timeline {
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+}
+
+.img {
+  max-width: 160px;
+}
+
+.w-404px {
+  max-width: 404px;
+}
+
+.about-us {
+  border: 1px solid white;
+  border-radius: 10px;
+  max-width: 500px;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px 0px #f1eeee;
+}
+
+.bullets {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.Mike_taylor_img {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: -10%;
+  left: -17px;
+}
+
+.img-3 {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.box_img {
+  max-width: 320px;
+  width: 100%;
+}
+
+.max-511px {
+  max-width: 511px;
+}
+
+.max-650 {
+  max-width: 500px;
+}
+
+.max-181 {
+  max-width: 180px;
+}
+
+.max-395px {
+  max-width: 395px;
+}
+
+.max-477 {
+  max-width: 477px;
+}
+
+.gap_60 {
+  gap: 62px;
+}
+
+.wh_50 {
+  width: 50px;
+}
+
+.img-4 {
+  width: 36px;
+  height: 36px;
+  transition: all 300ms linear;
+}
+
+.img-4:hover {
+  transform: translateY(-10px);
+}
+
+.img-5 {
+  width: 16px;
+  height: 16px;
+  transition: all 250ms linear;
+}
+
+.img-5:hover {
+  scale: 1.3;
+}
+
+.enjoy_absolute {
+  position: absolute;
+  top: 21%;
+  right: 0%;
+  max-width: 375px;
+  z-index: -1;
+}
+
+.decore_absolute {
+  width: 625px;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  overflow: hidden;
+}
+
+.arrow-1 {
+  position: absolute;
+  right: 3%;
+  top: 35%;
+  width: 14px;
+  height: 7px;
+  cursor: pointer;
+}
+
+.arrow-2 {
+  position: absolute;
+  right: 3%;
+  top: 45%;
+  width: 14px;
+  height: 7px;
+  cursor: pointer;
+}
+
+.w-20px {
+  width: 20px;
+}
+
+.w-354px {
+  max-width: 354px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@media (min-width:1400px) {
+  .send-absolute {
+    position: absolute;
+    right: 8.5%;
+    top: 7%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width:992px) {
+  label[for="iconbox"] {
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+  }
+
+  label[for="iconbox"]>span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    z-index: 10;
+  }
+
+  .md-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #fff1da;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: -100%;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.7s linear;
+    padding-left: 0px;
+  }
+
+  input[type="checkbox"]:checked+div ul.md-screen {
+    opacity: 1;
+    left: 0;
+    pointer-events: all;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pt_5 {
+    padding-top: 50px;
+  }
+
+  .reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .max-477 {
+    max-width: none !important;
+  }
+
+  .max-511px {
+    max-width: none;
+  }
+
+  .w-390px {
+    width: 300px;
+  }
+}
+
+@media (max-width:768px) {
+  .w-390px {
+    width: 250px;
+  }
+
+  .md_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width:576px) {
+  .rome_card_absolute {
+    position: absolute;
+    right: 10%;
+    bottom: -27%;
+  }
+
+  .flex_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pt__5 {
+    padding-top: 50px;
+  }
+
+  .Mike_taylor_img {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -8%;
+    left: 5px;
+  }
+
+  .flex_sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .max-207 {
+    max-width: none;
+  }
+
+  .w_70px {
+    width: 45px;
+    height: 45px;
+  }
+
+  .enjoy_absolute {
+    position: absolute;
+    top: 18%;
+    right: 10%;
+    max-width: 300px;
+    z-index: -1;
   }
 }

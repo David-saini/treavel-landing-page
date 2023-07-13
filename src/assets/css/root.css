@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap');
+
+:root {
+
+    --ff-poppins: 'poppins';
+    --ff-montserrat: 'Montserrat';
+    --ff-OpenSans: 'Open Sans';
+    --ff-volkhov: 'Volkhov';
+
+    --fs-84: 84px;
+    --fs-50: 50px;
+    --fs-44: 44px;
+    --fs-33: 33px;
+    --fs-21: 21px;
+    --fs-20: 20px;
+    --fs-18: 18px;
+    --fs-17: 17px;
+    --fs-14: 14px;
+    --fs-13: 13px;
+
+    --font-extrabold: 800;
+    --font-bold: 700;
+    --font-semibold: 600;
+    --font-medium: 500;
+    --font-normal: 400;
+
+    --text-color-dark: #212832;
+    --text-color-orange: #df6951;
+    --text-color-primary: #181e4b;
+    --text-color-secondary: #5e6282;
+    --text-color-white: #ffffff;
+    --text-color-light: #686d77;
+    --text-color-extra-dark: #14183e;
+    --text-color-success: #1e1d4c;
+    --text-color-black: #080809;
+    --text-color-grey: #84829a;
+    --text-color-voilet: #8a79df;
+    --text-color-navy: #39425d;
+
+}
+
+.poppins {
+    font-family: var(--ff-poppins);
+}
+
+.montserrat {
+    font-family: var(--ff-montserrat);
+}
+
+.open-sans {
+    font-family: var(--ff-OpenSans);
+}
+
+.volkhov {
+    font-family: var(--ff-volkhov);
+}
+
+.fs-13 {
+    font-size: var(--fs-13);
+}
+
+.fs-14 {
+    font-size: var(--fs-14);
+}
+
+.fs-17 {
+    font-size: var(--fs-17);
+}
+
+.fs-18 {
+    font-size: var(--fs-18);
+}
+
+.fs-20 {
+    font-size: var(--fs-20);
+}
+
+.fs-21 {
+    font-size: var(--fs-21);
+}
+
+.fs-33 {
+    font-size: var(--fs-33);
+}
+
+.fs-44 {
+    font-size: var(--fs-44);
+}
+
+.fs-50 {
+    font-size: var(--fs-50);
+}
+
+.fs-84 {
+    font-size: var(--fs-84);
+}
+
+.w-400 {
+    font-weight: var(--font-normal);
+}
+
+.w-500 {
+    font-weight: var(--font-medium);
+}
+
+.w-600 {
+    font-weight: var(--font-semibold);
+}
+
+.w-700 {
+    font-weight: var(--font-bold);
+}
+
+.w-800 {
+    font-weight: var(--font-extrabold);
+}
+
+.fc-dark {
+    color: var(--text-color-dark);
+}
+
+.fc-orange {
+    color: var(--text-color-orange);
+}
+
+.fc-primary {
+    color: var(--text-color-primary);
+}
+
+.fc-secondary {
+    color: var(--text-color-secondary);
+}
+
+.fc-white {
+    color: var(--text-color-white);
+}
+
+.fc-light {
+    color: var(--text-color-light);
+}
+
+.fc-extra-dark {
+    color: var(--text-color-extra-dark);
+}
+
+.fc-success {
+    color: var(--text-color-success);
+}
+
+.fc-black {
+    color: var(--text-color-black);
+}
+
+.fc-grey {
+    color: var(--text-color-grey);
+}
+
+.fc-voilet {
+    color: var(--text-color-voilet);
+}
+
+.fc-navy {
+    color: var(--text-color-navy);
+}
+
+@media (max-width:992px) {
+    :root {
+        --fs-84: 75px;
+        --fs-50: 42px;
+        --fs-44: 38px;
+        --fs-33: 28px;
+        --fs-21: 20px;
+        --fs-20: 19px;
+        --fs-18: 17px;
+        --fs-17: 16px;
+        --fs-14: 13px;
+        --fs-13: 13px;
+    }
+}
+
+@media (max-width:768px) {
+    :root {
+        --fs-84: 70px;
+        --fs-50: 38px;
+        --fs-44: 35px;
+        --fs-33: 25px;
+        --fs-21: 18px;
+        --fs-20: 17px;
+        --fs-18: 16px;
+        --fs-17: 15px;
+        --fs-14: 13px;
+        --fs-13: 13px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --fs-84: 55px;
+        --fs-50: 35px;
+        --fs-44: 30px;
+        --fs-33: 22px;
+        --fs-21: 16px;
+        --fs-20: 15px;
+        --fs-18: 14px;
+        --fs-17: 13px;
+        --fs-14: 11px;
+        --fs-13: 11px;
+    }
+}
